@@ -45,10 +45,10 @@
     </tr>
     <tr>
         <td>1</td>
-        <td width="100px">约翰.纳什</td>
-        <td width="100px">25</td>
-        <td align="center"><a href="/edit">编辑</a></td>
-        <td align="center"><a href="/delete">删除</a></td>
+        <td width="100px">$users->name</td>
+        <td width="100px">$users->email</td>
+        <td align="center"><a href="/edit?id=$users->id">编辑</a></td>
+        <td align="center"><a href="/delete?id=$users->id">删除</a></td>
     </tr>
     <tr>
         <td>2</td>

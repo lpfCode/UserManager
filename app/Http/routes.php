@@ -13,7 +13,7 @@ Route::get('/', 'UserController@index');
 Route::get('edit', 'UserController@edit');
 Route::get('add', 'UserController@add');
 Route::get('delete', 'UserController@delete');
-Route::get('save', 'UserController@save');
+Route::post('save', 'UserController@save');
 Route::get('query', 'UserController@query');
 Route::get('home', 'HomeController@index');
 Route::get('about', 'AboutController@index');
