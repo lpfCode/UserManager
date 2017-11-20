@@ -43,13 +43,15 @@
         <td>年龄</td>
         <td colspan="2" align="center">操作</td>
     </tr>
-    <tr>
-        <td>1</td>
-        <td width="100px">$users->name</td>
-        <td width="100px">$users->email</td>
-        <td align="center"><a href="/edit?id=$users->id">编辑</a></td>
-        <td align="center"><a href="/delete?id=$users->id">删除</a></td>
-    </tr>
+    @foreach($users as $key => $value)
+        <tr>
+            <td>1</td>
+            <td width="100px">{{$value->name}}</td>
+            <td width="100px">$value->email</td>
+            <td align="center"><a href="/edit?id=$users->id">编辑</a></td>
+            <td align="center"><a href="/delete?id=$users->id">删除</a></td>
+        </tr>
+    @endforeach
     <tr>
         <td>2</td>
         <td width="100px">肖申克</td>

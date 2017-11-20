@@ -8,8 +8,9 @@ class UserController extends Controller {
 //    查全部
 	public function index(){
 
-	    $users = User::orderBy('id','desc');
-        return view('index',array('users',$users));
+	    $users = User::all();
+//        return view('index',array('users',$users));
+	    return View::make('index')->with('users',$users);
 	}
 //	增加按钮
     public function add(){
