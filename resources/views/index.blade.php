@@ -16,6 +16,7 @@
 <head>
     <meta charset="UTF-8">
     <title>用户管理</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 </head>
 <body>
 <table border="1" align="center" bordercolor="black"; cellspacing="0" width="80%">
@@ -47,9 +48,9 @@
         <tr>
             <td>1</td>
             <td width="100px">{{$value->name}}</td>
-            <td width="100px">$value->email</td>
-            <td align="center"><a href="/edit?id=$users->id">编辑</a></td>
-            <td align="center"><a href="/delete?id=$users->id">删除</a></td>
+            <td width="100px">{{$value->eamil}}</td>
+            <td align="center"><a href="/edit?id={{$value->id}}">编辑</a></td>
+            <td align="center"><a href="/delete?id={{$value->id}}">删除</a></td>
         </tr>
     @endforeach
     <tr>
